@@ -1,12 +1,12 @@
-module "sandbox" {
+module "test2" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "<ACCOUNT EMAIL>"
-    AccountName               = "sandbox-aft"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "<SSO EMAIL>"
-    SSOUserFirstName          = "Sandbox"
+    AccountEmail              = "cb.test2@cloud-bridge.co.uk"
+    AccountName               = "Test2"
+    ManagedOrganizationalUnit = "Test"
+    SSOUserEmail              = "cb.test2@cloud-bridge.co.uk"
+    SSOUserFirstName          = "Test2"
     SSOUserLastName           = "AFT"
   }
 
@@ -23,5 +23,5 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "test2"
 }
